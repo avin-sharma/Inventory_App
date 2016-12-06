@@ -74,8 +74,6 @@ public class EditorActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_editor);
 
         mProductUri = getIntent().getData();
-        changeLayoutOnSource();
-
 
         productEmail = (EditText) findViewById(R.id.email_edit_text);
         productName = (EditText) findViewById(R.id.name_edit_text);
@@ -87,6 +85,8 @@ public class EditorActivity extends AppCompatActivity implements
         order = (Button) findViewById(R.id.order_supplier_button);
         addImage = (Button) findViewById(R.id.add_image_button);
         productImage = (ImageView) findViewById(R.id.product_photo_image_view);
+
+        changeLayoutOnSource();
 
         productName.setOnTouchListener(mTouchListener);
         productPrice.setOnTouchListener(mTouchListener);
@@ -283,7 +283,6 @@ public class EditorActivity extends AppCompatActivity implements
             LinearLayout linearLayout = (LinearLayout) findViewById(R.id.quantity_buttons_linear_layout);
             EditText editText = (EditText) findViewById(R.id.variable_quantity_edit_text);
             Button button = (Button) findViewById(R.id.order_supplier_button);
-            addImage.setText(R.string.change_image);
 
             linearLayout.setVisibility(View.GONE);
             editText.setVisibility(View.GONE);
@@ -292,6 +291,7 @@ public class EditorActivity extends AppCompatActivity implements
             invalidateOptionsMenu();
         } else {
             setTitle("Edit a Product");
+            addImage.setText(R.string.change_image);
             getLoaderManager().initLoader(PRODUCT_LOADER_ID, null, this);
         }
     }
