@@ -184,7 +184,7 @@ public class EditorActivity extends AppCompatActivity implements
                         finish();
                     }
                 }
-                break;
+                return true;
             case R.id.delete:
                 DialogInterface.OnClickListener discardDeleteButtonClickListener =
                         new DialogInterface.OnClickListener() {
@@ -196,7 +196,7 @@ public class EditorActivity extends AppCompatActivity implements
                         };
 
                 showDeleteWarningDialog(discardDeleteButtonClickListener);
-                break;
+                return true;
 
             case android.R.id.home:
                 if (!mProductHasChanged) {
@@ -214,10 +214,12 @@ public class EditorActivity extends AppCompatActivity implements
 
                     showUnsavedChangesDialog(discardButtonClickListener);
                 }
-                break;
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
 
         }
-        return super.onOptionsItemSelected(item);
+
     }
 
     private boolean checkProduct() {
