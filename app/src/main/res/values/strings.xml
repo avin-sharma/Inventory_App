@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <string name="sale">SALE</string>
+    <string name="quantity">Quantity</string>
+    <string name="currency_symbol">₹</string>
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="price_header_list_view">Price</string>
+    <string name="category_overview">Overview</string>
+    <string name="edit_text_hint_name">Name</string>
+    <string name="edit_text_hint_price">Price</string>
+    <string name="receive">RECEIVE</string>
+    <string name="order_from_supplier">Order From Supplier</string>
+    <string name="save">Save</string>
+    <string name="category_email">Email</string>
+    <string name="no_items">No items here!
+    Start by adding new products.</string>
+    <string name="delete">Delete</string>
+    <string name="delete_all_products">Delete all products</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="delete_product">Delete this product?</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_image_source">Select Image Source</string>
+    <string name="add_image">Add Image</string>
+    <string name="change_image">Change Image</string>
+</resources>
