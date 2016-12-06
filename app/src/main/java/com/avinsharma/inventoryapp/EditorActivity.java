@@ -283,6 +283,7 @@ public class EditorActivity extends AppCompatActivity implements
             LinearLayout linearLayout = (LinearLayout) findViewById(R.id.quantity_buttons_linear_layout);
             EditText editText = (EditText) findViewById(R.id.variable_quantity_edit_text);
             Button button = (Button) findViewById(R.id.order_supplier_button);
+            addImage.setText(R.string.change_image);
 
             linearLayout.setVisibility(View.GONE);
             editText.setVisibility(View.GONE);
